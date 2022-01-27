@@ -4,8 +4,10 @@ and https://link.springer.com/article/10.1007/s10586-019-02961-x
 CUDA C and NVIDIA Tesla M2090 are used. 
 The repository includes:
 * Source code of Berlekamp-Massey algorithm (BMA).
+* The makefile
 * Paper 1: Evaluation of CUDA Memory Fence Performance; Berlekamp-Massey Case Study
 * Paper 2: Exploring the parallel capabilities of GPU: Berlekamp-Massey algorithm case study
+
 
 The code is documented and designed to be easy to extend. If you use it in your research, please consider citing this repository (bibtex below).
 ## Stetting 
@@ -15,6 +17,12 @@ section.
 The syndrome lengths were varied from 1 Kbit to 64 Mbits.
 ## Requirements
 gcc compiler, CUDA 7 or higher.
+The operating system is a Linux (CentOS).
+## Compile and Run
+- To compile the code you need to edit the makefile with CUDA instullation Path.
+- $ cd the_code_dir
+- $ make
+- $ ./parallel_bma
 
 ## Citation
 Use this bibtex to cite this repository:
