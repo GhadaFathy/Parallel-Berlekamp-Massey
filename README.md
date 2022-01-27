@@ -1,6 +1,8 @@
 # Parallel implementation of Berlekamp-Massey algorithm 
-this implementation include the two publiched paper [BMA] https://ieeexplore.ieee.org/abstract/document/7394405
-and https://link.springer.com/article/10.1007/s10586-019-02961-x 
+This implementation includes the two published papers:
+ https://ieeexplore.ieee.org/abstract/document/7394405
+ https://link.springer.com/article/10.1007/s10586-019-02961-x
+ 
 CUDA C and NVIDIA Tesla M2090 are used. 
 The repository includes:
 * Source code of Berlekamp-Massey algorithm (BMA).
@@ -9,23 +11,23 @@ The repository includes:
 * Paper 2: Exploring the parallel capabilities of GPU: Berlekamp-Massey algorithm case study
 
 
-The code is documented and designed to be easy to extend. If you use it in your research, please consider citing this repository (bibtex below).
+The code is documented and designed to be easy to extend. If you use it in your research, please consider citing this repository (BibTeX below).
 ## Stetting 
 The proposed experiments execute BMA using 512 threads per block.
 The number of active blocks and active threads are calculated as discussed in the parallel BMA implementation
 section. 
 The syndrome lengths were varied from 1 Kbit to 64 Mbits.
 ## Requirements
-gcc compiler, CUDA 7 or higher.
-The operating system is a Linux (CentOS).
+GCC compiler, CUDA 7 or higher.
+The operating system is Linux (CentOS).
 ## Compile and Run
-- To compile the code you need to edit the makefile with CUDA instullation Path.
+- To compile the code you need to edit the makefile with CUDA installation Path.
 - $ cd the_code_dir
 - $ make
 - $ ./parallel_bma
 
 ## Citation
-Use this bibtex to cite this repository:
+Use this BibTeX to cite this repository:
 ```
 1- Ali, Hanan, Zeinab Fayez, Ghada M. Fathy, and Walaa Sheta.
    "Evaluation of CUDA memory fence performance; Berlekamp-Massey case study." 
